@@ -27,10 +27,13 @@ module.exports = {
           test: /\.s?css/,
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
+        // {
+        //   test: /\.gif/,
+        // }
       ],
     },
     resolve: {
-      extensions: ['.js', '.jsx', '.scss', '.css', 'gif'],
+      extensions: ['.js', '.jsx', '.scss', '.css', '.gif'],
     },
     plugins: [
         new HtmlWebpackPlugin({
